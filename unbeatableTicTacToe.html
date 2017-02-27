@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tom's Very Beatable Tic Tac Toe</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        #game {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #ddd;
+            margin: 50px auto;
+            padding: 10px;
+            overflow: auto;
+        }
+
+        #game div {
+            margin: 0 auto;
+            clear: both;
+            width: 180px;
+        }
+
+        #game button {
+            display: block;
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            font-size: 40px;
+        }
+
+        #gameActionDisplay {
+            padding: 20px 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+<div>
+Tom's Not So Very Beatable Tic Tac Toe Game<br><br>
+<div id="winner"></div>
+<div id="move"></div>
+<table id="game">
+    <tr>
+        <td><button id="c00"></button></td>
+        <td><button id="c01"></button></td>
+        <td><button id="c02"></button></td>
+    </tr>
+    <tr>
+        <td><button id="c10"></button></td>
+        <td><button id="c11"></button></td>
+        <td><button id="c12"></button></td>
+    </tr>
+    <tr>
+        <td><button id="c20"></button></td>
+        <td><button id="c21"></button></td>
+        <td><button id="c22"></button></td>
+    </tr>
+</table>
+
+<input type="button" id="restart" value="Restart Game"/>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
